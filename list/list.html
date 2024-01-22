@@ -1,0 +1,43 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List</title>
+    <link rel="stylesheet" href="list.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>ContactsXContacts</h1>
+    <form id="form">
+        <div class="form-input-container" id="name-container">
+            <label for="form-input-name">Nombre y Apellido: </label>
+            <input type="text" class="form-input" id="form-input-name" autocomplete="off" placeholder="Simon Bolivar">
+            <p class="form-info">
+                Solo puede colocar un nombre y un apellido. <br>
+                Tanto el nombre como el apellido tienen que comenzar con una letra mayuscula. <br>
+                No puede tener numeros ni caracteres especiales.
+            </p>
+        </div>
+
+        <div class="form-input-container"  id="number-container">
+            <label for="form-input-number" id="Numero">Numero: </label>
+             <input type="text" class="form-input" id="form-input-number" autocomplete="off" placeholder="04242541020">
+            <p class="form-info">Debe ser un numero venezolano valido.</p>
+        </div>
+    
+
+    <button id="form-btn" disabled>Crear</button>
+
+    </form>
+
+    <h2 >Lista de contactos</h2>
+    <ul id="list" >
+        <!-- <p class="list-text">No hay contactos :(</p> -->
+        <button id="close-btn">Cerrar Sesion</button>
+       
+        </ul>
+    <script src="list.js"></script>
+</body>
+</html>

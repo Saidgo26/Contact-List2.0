@@ -1,0 +1,216 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+body{
+    margin: 0;
+    min-height: 100%;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    background:linear-gradient(#e2abfc,#601a75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h1, h2{
+    text-align: center;
+    margin: 0;
+    padding: 0; 
+    color: white;
+}
+#form{
+    width:100%;
+    background-color:#b5fdce;
+    border-width: 3px;
+    border-color: #3bed7d;
+    margin: 1rem 0 ;
+    padding:1rem ;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #013215;
+    font-weight: 700;
+}
+.form-info {
+    color:#ff2727;
+    font-weight: 700;
+    display: none;
+}
+
+.delete-btn {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1.5rem;
+    background-color: #c80d0d;
+    color: white;
+    transition: all 0.175s ease-in;
+}
+.delete-btn:hover{
+    transition: all 0.175s ease-in;
+    background-color: white;
+    color: #ff2727;
+    
+}
+
+
+.edit-btn:enabled{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1.5rem;   
+    background-color: #0e6d32;
+    color: white;
+    
+}
+.edit-btn:disabled{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1.5rem;  
+    background-color: #a2c7afd2;
+    color: rgb(67, 88, 65); 
+}
+.edit-btn:hover{
+    background-color:white;
+    color: #08b146;
+    transition: all 0.175s ease-in;
+    
+}
+.form-input-container{
+    margin:0 ;
+    padding: 1rem ;
+    border-radius: 1rem ;
+    display: flex;
+    flex-direction: column;
+}
+#form-btn{
+    border-radius: 3rem;
+    height: 2rem;
+    align-self: center;
+}
+
+#form-btn:enabled {
+    background-color: #08b146;
+    color: white;
+    cursor:pointer ; 
+    transition: all 0.175s ease-in; 
+}
+#form-btn:hover{
+    background-color:#0e6d32;
+    transition: all 0.175s ease-in;
+  
+}
+
+#form-btn:disabled {
+    background-color: #a2c7afd2;
+    color: rgb(67, 88, 65);    
+}
+
+#close-btn{
+    border-radius: 3rem;
+    height: 2rem;
+    align-self: center;
+    background-color: #ae325c;
+    color: white;
+    cursor:pointer ; 
+    transition: all 0.175s ease-in; 
+
+}
+#close-btn:hover{
+    background-color: #461122;
+}
+#list{ 
+ 
+    width: 100%;
+    padding:0.5rem 0.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#b5fdce;
+    border-width: 3px;
+    border-color: #3bed7d;
+    overflow: auto;
+    
+}
+.list-text{
+    text-align: center; 
+    color: #013215;
+    font-weight: 700; 
+}
+.edit-name, .edit-number{
+   padding: 0.3rem;
+   border-radius: 2rem; 
+   margin: 0.2rem;
+}
+
+#edit-container{
+    display: flex;
+    flex-direction: column; 
+}
+
+.contacts {
+    padding: 0.5rem;
+    list-style:none;
+    display: flex;
+    align-items: center; 
+    justify-content: center;   
+   
+}
+
+.form-input{
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.form-input:focus {
+    outline: none;
+    border: 2px solid #601a75;  
+}
+
+.show {
+    display: block;
+}
+
+.correct:focus, .correct{
+    border: 2px solid rgb(48, 219, 48);
+}
+    
+.invalid:focus, .invalid{
+    border: 2px solid rgb(246, 32, 32);
+}
+
+@media (min-width: 768px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #form{
+        width: 50%;
+    }
+   
+    #list{
+        width: 50%;
+        overflow: auto;
+    }
+   
+}
+
+@media (min-width: 1024px){
+    #edit-container{
+        display: flex;
+        flex-direction: row; 
+    }
+
+}
+

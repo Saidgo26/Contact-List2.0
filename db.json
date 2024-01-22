@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": "3eb5",
+      "username": "Said"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "213e",
+      "name": "Said G",
+      "phone": "04242310028",
+      "user": "Said"
+    }
+  ]
+}
